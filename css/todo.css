@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+#lft{
+    justify-content: space-around;
+    
+}
+ #lft span{
+    background-color: #4b9bf7;
+    color: #ffffff;
+    padding: 7px 15px;
+    border-radius: 17px;
+    
+}
+#rgt{
+    margin-left: auto;
+    justify-content: space-between;
+}
+#rgt span{
+    border: solid 1px #4b9bf7;
+    color: #4b9bf7;
+    font-size: 16px;
+    padding: 7px 15px;
+    border-radius: 17px;
+}
+
+.task-nav{
+    display: flex;
+    
+}
+.action-nav{
+    margin-left: auto;
+}
+.action-nav #share{
+    background-color: #fafaf9;
+    color: #696767;
+    padding: 7px;
+    font-size: 17px;
+    border-radius: 5px;   
+}
+.action-nav #clr{
+   background-color: #d4d4d4; 
+   padding: 7px;
+   border-radius: 5px;
+   color: #929090;
+   font-size: 17px;
+}
+.action-nav #all-tsk{
+    margin-right: -3px;
+}
+.action-nav #all-tsk i{
+    transform: rotate(90deg);
+    background-color: #fafaf9;
+    padding: 7px;
+    color: #686666;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.action-nav #plan{
+    background-color: #c4c2c2;
+    padding: 4px 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #686666;
+}
+.action-nav #srt{
+    background-color: #fafaf9;
+    padding: 4px 10px;
+    border-radius: 5px;
+    color: #929090;
+}
+#today{
+    ;
+}
+
+#today i{
+    margin-left: 275px;
+    color: #929090;
+    
+}
+#tmrw i{
+    margin-left: 240px;
+    color: #929090;
+}
+#upc i{
+    margin-left: 240px;
+    color: #929090;
+}
+#smd i{
+    margin-left: 245px;
+    color: #929090;
+}
+#add-task{
+    width: 360px;
+    margin-top: 335px;
+    border-top: solid #c4c2c2 1px;
+    box-shadow: #c4c2c2 1px 2px 2px 1px;
+}
+#add-task input{
+    margin: 10px 0px;
+    border: 1px #c4c2c2 solid;
+    border-radius: 20px;
+    color: #a8a7a7;
+    text-align: center;
+    width: 300px;
+}
