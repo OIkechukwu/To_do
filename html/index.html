@@ -12,59 +12,111 @@
 </head>
 <body>
     <section class="container-fluid">
-        <div class="row mt-4 my-4 mx-5">
-            <div id="lft">
-                <i class="fa fa-bars"></i>
-                <span><i class="fa fa-plus">&nbsp;&nbsp;&nbsp</i>New</span>
+        <div class="row mt-3" style="box-shadow: #bbbaba  0.5px 0.5px 0.6px;">
+            <div class="lft-action">
+                <ul>
+                    <li>
+                        <i class="fa fa-bars" style="color: #9e9d9d;font-size: 28px;"></i>
+                    </li>
+                    <li class="nw py-1 px-3 ml-3">
+                        <i class="fa fa-plus" style="font-size: 13px;"></i> New
+                    </li>
+                </ul>
             </div>
-            <div id="rgt">
-                <i class="fa fa-search"></i>
-                <i class="fa fa-gear"></i>
-                <i class="fa fa-square-o"></i>
-                <i class="fa fa-refresh"></i>
-                <span>GO PREMIUM</span>   
+            <div class="rgt-action">
+                <ul c>
+                    <li>
+                        <i class="fa fa-search " style="color: #9e9d9d; font-size: 25px;"></i>
+                    </li>
+                    <li><i class="fa fa-cog ml-4" style="color: #9e9d9d; font-size: 25px;"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-square-o ml-4" style="color: #9e9d9d;font-size: 25px;"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-refresh ml-4" style="color: #9e9d9d;font-size: 25px;"></i>
+                    </li>
+                    <li class="premium py-1 px-2 ml-4">
+                        GO PREMIUM
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="row">
-            <div class="col-2" style="color: #5a5858; background-color: #fafaf9; position: relative;">
-                <div class="asid ml-5 mt-5">
-                    <span><i class="fa fa-check-circle-o">&nbsp;&nbsp;</i>MY LISTS<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="fa fa-pencil"></i></span>
-                    <div class="tasks mt-3 ml-4">All Tasks
-                        <div class="psl mt-3">Personal</div>
-                        <div class="wrk mt-3">Work</div>
-                        <div class="grcy mt-3">Grocery List</div>
-                        <div class="nl mt-3"><i class="fa fa-plus">&nbsp;&nbsp;</i>New List</div>
-                    </div>
-                </div>
-                <footer class="ftr" style="border-top: solid 1px #dddcdc; font-size: 12px; margin-top: 360px; text-align: center;">Any.do Beta, v4.2.54</footer>
+            <div class="col-2 mt-2 " id="aside">
+                <ul>
+                    <li><a href="#"><i class="fa fa-check-circle-o mr-3 mt-1" style="font-size: 25px; color: #8a9294;"></i>MY LISTS<i class="fa fa-pencil" style="font-size: 15px; color: #8a9294; margin-left: 72px;"></i></a></li>
+                    <li><a href=""> All Tasks</a></li>
+                    <li><a href=""> Personal <span><i class="fa fa-circle" style="color: #d8d7d7; margin-left: 68px; display: none;"></i></span></a></li>
+                    <li><a href="">Work <span><i class="fa fa-circle" style="color: #d8d7d7; margin-left: 97px; display: none;"></i></span></a></li>
+                    <li><a href=""> Grocery List <span><i class="fa fa-circle" style="color: #d8d7d7; margin-left: 42px; display: none;"></i></span></a></li>
+                    <li><a href=""> <i class="fa fa-plus" style="color: #9e9d9d; font-size: 12px;"></i> New List</a></li>
+                </ul>
+                <footer>
+                    Any.do Beta, v4.2.54
+                </footer>
             </div>
-            <div class="col-10 mt" style="background-color: #e7e5e5;">
-                <nav class="task-nav mt-5 ml-5">
+            <div class="col-10 mt-2" style="background-color: #f2f2f2; ">
+                <div class="task">
                     <div>
                         <h3>All Tasks</h3>
+                        <div class="task-all" style="display: flex;">
+                            <div class="task-p col-3" style="background-color: #ffffff; box-shadow: #d4d4d4 2px 4px 5px 5px;">
+                                <div class="row" id="personal">
+                                    <h5>Personal</h5>
+                                    <ul>
+                                        <li class="p-task d-none"><i class="fa fa-circle-o"><span></span></i></li>
+                                        <li><input type="text" placeholder=" Click to quickly add a task"></input> <i class="fa fa-arrow-circle-o-up"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="task-w col-3" style="background-color: #ffffff; box-shadow: #d4d4d4 2px 4px 5px 5px;">
+                                <div class="row" id="work">
+                                    <h5>Work</h5>
+                                    <ul>
+                                        <li class="w-task d-none"><i class="fa fa-circle-o"><span></span></i></li>
+                                        <li><input type="text" placeholder=" Click to quickly add a task"></input> <i class="fa fa-arrow-circle-o-up"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="task-g col-3" style="background-color: #ffffff; box-shadow:  #d4d4d4 2px 4px 5px 5px;">
+                                <div class="row" id="grocery">
+                                    <h5>Grocery List</h5>
+                                    <ul>
+                                        <li class="g-task d-none"><i class="fa fa-circle-o"><span></span></i></li>
+                                        <li><input type="text" placeholder=" Click to quickly add a task"></input> <i class="fa fa-arrow-circle-o-up"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="task-nav mr-4">
+                        <ul>
+                            <li id="share" style="font-size: 14px; background-color: #ffffff; color:8a9294; padding: 10px 8px; border-radius: 5px;box-shadow: 1px 1px 1px 1px #d4d4d4;">
+                                Share List <i class="fa fa-user-plus"></i>
+                            </li>
+                            <li id="clear" style="font-size: 15px; background-color: #fdfbfb; color:#8a9294; padding: 10px 8px; border-radius: 5px;
+                            margin-left: 10px;box-shadow: 1px 1px 1px 1px #d4d4d4;">
+                                <i class="fa fa-times-circle-o"> Clear</i>  
+                            </li>
+                            <li>
+                                <i class="fa fa-bars mt" style="transform: rotate(90deg); font-size: 27px; background-color: #bebebe; 
+                                color:#8a9294;padding: 8px 6px; border-bottom-right-radius:  5px; border-bottom-left-radius: 5px; margin-left: 15px; box-shadow: 1px 1px 1px 1px #d4d4d4;"></i>   
+                            </li>
+                            <li>
+                                <i class="fa fa-pause" style="background-color: #ffffff; color:#8a9294; padding: 9px 13px; border-end-end-radius: 5px;
+                                border-top-right-radius: 5px; margin-left: -2px; box-shadow: 1px 1px 1px 1px #d4d4d4;"></i>   
+                            </li>
+                            <li>
+                                <i class="fa fa-ellipsis-h" style="background-color: #ffffff; 
+                                color:#8a9294; padding: 10px 15px; border-radius: 5px; margin-left: 10px; box-shadow: 1px 1px 1px 1px #d4d4d4;"></i>
+                            </li>    
+                        </ul>
                     </div>
-                    <div class="action-nav mr-5" style="font-size: 20px;">
-                        <span id="share">Share List<i class="fa fa-user-plus px-2"></i></span>
-                        <span id="clr"><i class="fa fa-times-circle">&nbsp;</i>Clear</span>
-                        <span id="all-tsk"><i class="fa fa-bars" ></i></span>
-                        <span id="plan"><i class="fa fa-pause"></i></span>
-                        <span id="srt"><i class="fa fa-ellipsis-h"></i></span>
-                    </div>
-                </nav>
-                <div class="col-4 bg-light ml-5 mt-3" style="font-size: 20px;">
-                    <div id="today">Today<i class="fa fa-circle"></i></div>
-                    <div id="tmrw">Tomorrow<i class="fa fa-circle"></i></div>
-                    <div id="upc">Upcoming<i class="fa fa-circle"></i></div>
-                    <div id="smd">Someday<i class="fa fa-circle"></i></div>
-                <div id="add-task">    
-                    <input type="text" placeholder="Click to add a task"><i class="fa fa-arrow-circle-o-up"></i>
                 </div>
-                </div>
-            </div>
-            
                 
-            
-        </div>
-    </section>
+            </div>
+
+    </section>  
 </body>
 </html>
